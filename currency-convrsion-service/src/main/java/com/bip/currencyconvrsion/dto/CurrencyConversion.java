@@ -1,4 +1,4 @@
-package com.bip.currencyexchangeservice.dto;
+package com.bip.currencyconvrsion.dto;
 
 import java.math.BigDecimal;
 
@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ExchangeValueDTO {
+public class CurrencyConversion {
 	private Integer id;
 	private String from;
 	private String to;
 	private BigDecimal conversionMultiple;
 	private int port;
+	private BigDecimal totalCalculatedAmount;
 }
